@@ -128,7 +128,7 @@ class App extends React.Component {
                     level={1}
                     style={{ color: "white", textAlign: "center" }}
                   >
-                    Your favorite Bay Area restaurant might close forever. Help
+                    Your favorite Toronto restaurant might close forever. Help
                     save it.
                   </Title>
                   <div className="header-sans">

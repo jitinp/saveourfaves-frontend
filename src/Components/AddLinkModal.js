@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Modal } from "antd";
 import axios from "axios";
 import { LogEngagementEvent } from "../Logging";
+import Constants from "../Constants";
 
 export function AddLinkModal(props) {
   const [giftLink, setGiftLink] = useState(null);
@@ -23,7 +24,7 @@ export function AddLinkModal(props) {
     LogEngagementEvent("user-action", "submitted-new-place");
     setCounter(1);
     axios
-      .post("/api/places/submit_gift_card_link", {
+      .post(Constants.ApiURL + "api/places/submit_gift_card_link", {
         place_id: props.place.placeID,
         gift_card_url: giftLink
       })

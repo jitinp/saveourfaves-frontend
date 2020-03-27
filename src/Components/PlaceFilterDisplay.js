@@ -4,6 +4,7 @@ import { NearbySpots } from "./NearbySpots";
 import { PlaceResultMain } from "./PlaceResultMain";
 import { PlaceAutosuggestion } from "./PlacesAutosuggestion";
 import Areas from "../CityData/Areas";
+import Constants from "../Constants";
 
 export class PlaceFilterDisplay extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export class PlaceFilterDisplay extends React.Component {
 
   fetchPlaceInfo = (scrollElementRef, placeKey) => {
     axios
-      .get("/api/places/detail", {
+      .get(Constants.ApiURL + "api/places/detail", {
         params: {
           place_id: placeKey
         }

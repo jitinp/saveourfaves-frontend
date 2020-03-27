@@ -3,6 +3,7 @@ import { Button, Popover } from "antd";
 import axios from "axios";
 import { AddLinkModal } from "./AddLinkModal";
 import { LogEngagementEvent } from "../Logging";
+import Constants from "../Constants";
 
 export class EmailSubscription extends React.Component {
   constructor(props) {
@@ -33,7 +34,7 @@ export class EmailSubscription extends React.Component {
       return;
     }
     axios
-      .post("/api/places/submit_email", {
+      .post(Constants.ApiURL + "api/places/submit_email", {
         email: this.state.email,
         place_id: this.props.place.placeID
       })

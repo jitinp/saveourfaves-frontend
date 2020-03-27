@@ -5,6 +5,8 @@ import { LogEngagementEvent } from "../Logging";
 import Config from "../Config";
 import useScript from "../lib/useScript";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
+import Constants from "../Constants";
+
 // If you want to use the provided css
 // import 'react-google-places-autocomplete/dist/assets/index.css';
 
@@ -45,7 +47,7 @@ export function AddNewPlaceModal(props) {
     LogEngagementEvent("user-action", "submitted-new-place");
     setCounter(1);
     axios
-      .post("/api/places/submit_new_place", {
+      .post(Constants.ApiURL + "api/places/submit_new_place", {
         place_details: placeDetails,
         email: email,
         gift_card_url: giftLink

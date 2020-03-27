@@ -3,6 +3,7 @@ import { Typography } from "antd";
 import Neighborhoods from "../CityData/Neighborhoods";
 import axios from "axios";
 import { SuggestedPlaceCards } from "./SuggestedPlaceCards";
+import Constants from "../Constants";
 
 const { Title } = Typography;
 
@@ -16,10 +17,7 @@ function AreaDropdown(props) {
         props.updateArea(newArea);
       }}
     >
-      <option value="sf">San Francisco</option>
-      <option value="eastbay">East Bay</option>
-      <option value="marin">Marin</option>
-      <option value="southbay">South Bay</option>
+      <option value="toronto">Toronto</option>
     </select>
   );
 }
@@ -47,6 +45,7 @@ export class NeighborhoodCards extends React.Component {
         [array[i], array[j]] = [array[j], array[i]];
       }
     }
+    console.log("Area", area);
     const neighborhoods = Neighborhoods[area];
     const firstBatch = neighborhoods.slice(0, 6);
     const rest = neighborhoods.slice(6);
@@ -82,7 +81,7 @@ export class NeighborhoodCards extends React.Component {
   fetchSuggestionsForNeighborhood(neighborhood, ref, fetchOffset) {
     this.setState({ loading: true });
     axios
-      .get("/api/places/by_neighborhood", {
+      .get(Constants.ApiURL + "api/places/by_neighborhood", {
         params: {
           neighborhood: neighborhood.key,
           offset: fetchOffset

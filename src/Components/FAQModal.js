@@ -43,14 +43,14 @@ function FAQModal(props) {
 
   const consumerFAQs = [
     {
-      title: "What is SaveOurFaves?",
+      title: "What is saveyourfaves.ca?",
       body:
-        "SaveOurFaves is a directory of Bay Area restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
+        "SaveYourFaves is a directory of Toronto restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
     },
     {
       title: "Why isn’t my favorite business on your site?",
       body:
-        "Please help us add your fave Bay Area food & beverages spots " +
+        "Please help us add your fave Toronto food & beverages spots " +
         addPlaceLink("here") +
         ". We're open to adding more small business categories if this catches on."
     },
@@ -60,23 +60,7 @@ function FAQModal(props) {
       body:
         "Delivery and pickup are great options! Some restaurants that don’t normally offer delivery have started to offer curbside pickup during the pandemic so check their websites and social media to see what’s available. <br />" +
         "Tip generously if you can (even for delivery/pickup), since employees are doing extra work and putting their health at risk. <br />" +
-        "Encourage the government to get involved. Sign this " +
-        renderLink("http://chng.it/jM97Sbf9ct", "San Francisco petition") +
-        " to encourage lawmakers to offer emergency small business loans. Please call your US Representative and your Senators. You can be connected to the capitol switchboard at 202-224-3121. Demand that small businesses are part the federal stimulus plan."
-    },
-    {
-      title: "Why is this just for the Bay Area? Can you do this for my city?",
-      body:
-        "As San Francisco natives, we started this project for our community. Over the past days, people have launched similar tools for their specific cities, or even nationally. Check out " +
-        renderLink("https://helpmainstreet.com/", "Help Main Street") +
-        ", " +
-        renderLink("https://givelocal.co/", "GiveLocal") +
-        ", and " +
-        renderLink(
-          "https://rallyforrestaurants.com/",
-          "Rally for Restaurants"
-        ) +
-        "."
+        "Encourage the government to get involved."
     },
     {
       title: "Who built this? And why?",
@@ -95,7 +79,7 @@ function FAQModal(props) {
     {
       title: "Why isn’t my business showing up in your search results?",
       body:
-        "Please help us add your Bay Area food/beverage business " +
+        "Please help us add your Toronto food/beverage business " +
         addPlaceLink("here") +
         ". We're open to adding more small business categories if this catches on."
     },
@@ -103,13 +87,6 @@ function FAQModal(props) {
       title:
         "My business offers gift certificates, but your site says we don’t",
       body: "Please let us know the details " + addPlaceLink("here") + "."
-    },
-    {
-      title:
-        "I'm running a GoFundMe for my staff, and I'd like to list it on your site",
-      body:
-        "Please drop us a note via email at " +
-        renderLink("mailto:info@saveourfaves.org", "info@saveourfaves.org")
     },
     {
       title: "How can I start offering online gift cards?",

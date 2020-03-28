@@ -91,7 +91,7 @@ class App extends React.Component {
                 <Row className="top-header">
                   <Col span={24} offset={0}>
                     <Title style={{ float: "left", color: "white" }} level={4}>
-                      SaveOurFaves
+                      SaveYourFaves
                     </Title>
                     <div style={{ float: "right" }}>
                       <a href="#">
@@ -110,10 +110,28 @@ class App extends React.Component {
                         </Title>
                       </a>
                       <Popover content={<ShareOptions />}>
-                        <Button shape="round" className="header-button">
-                          Tell friends
-                        </Button>
+                        <a href="#">
+                          <Title
+                            style={{
+                              color: "white",
+                              display: "inline",
+                              marginRight: "16px"
+                            }}
+                            level={4}
+                          >
+                            Tell Friends
+                          </Title>
+                        </a>
                       </Popover>
+                      <Button
+                        shape="round"
+                        className="header-button"
+                        onClick={event => {
+                          window.location.href = "/addplace";
+                        }}
+                      >
+                        Add a Place
+                      </Button>
                     </div>
                   </Col>
                 </Row>

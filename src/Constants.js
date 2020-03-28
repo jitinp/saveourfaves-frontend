@@ -1,6 +1,6 @@
 const Constants = {
   AddPlaceURL: "/addplace",
-  // ApiURL: "http://localhost:8000"
+  // ApiURL: "http://localhost:8000/"
   ApiURL: "http://backend.saveyourfaves.ca/"
 };
 

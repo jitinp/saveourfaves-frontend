@@ -132,8 +132,11 @@ class App extends React.Component {
                     save it.
                   </Title>
                   <div className="header-sans">
-                    Gift cards help "flatten the curve" of lost income from
-                    COVID-19.
+                    It’s time to stand together Toronto and help our vibrant
+                    restaurant scene from closing down. By ordering take-out or
+                    buying gift cards today, we can keep your favourite
+                    restaurants and their staff employed to serve Toronto again
+                    tomorrow.
                   </div>
                 </Col>
                 <Col
@@ -175,12 +178,16 @@ class App extends React.Component {
                     xl={9}
                     style={{ textAlign: "left" }}
                   >
-                    <Title level={3}>Our duty as loyal customers</Title>
+                    <Title level={3}>Help ensure our restaurants survive</Title>
                     <p>
-                      Our small businesses need us more than ever. Even though
-                      we can’t leave home, we can still support local
-                      restaurants by buying gift cards. It’s basically a
-                      mini-loan, so buy one now and make a plan to use it later.
+                      There has never been a harder time for restaurants and
+                      their staff. When things get tough, Toronto comes together
+                      and shows us at our best. Even though we can’t leave home,
+                      we can still support our restaurants by buying gift cards.
+                      Think of it as a small loan that gets the restaurant
+                      through the next few weeks and an incredible meal for
+                      yourself and others to enjoy together when this is all
+                      over.
                     </p>
                   </Col>
                   <Col
@@ -192,14 +199,17 @@ class App extends React.Component {
                     xl={9}
                     style={{ textAlign: "left" }}
                   >
-                    <Title level={3}>3 weeks can kill a business</Title>
+                    <Title level={3}>Time and actions matter</Title>
                     <p>
-                      Restaurants have tons of fixed costs: rent, labor, loan
-                      repayments, insurance, supplies, repairs – the list goes
-                      on. Even successful restaurants have razor thin margins of
-                      3-5%, and a third have struggled to pay employees at least
-                      once. The “shelter-in-place” ordinance keeping customers
-                      at home could tip the balance into bankruptcy.
+                      Local restaurants are more than places to eat. They are a
+                      vital part of our economy and they add vibrancy and
+                      enjoyment to our local neighbourhoods. We don’t want to
+                      lose them and we don’t have to. Our restaurants are small
+                      businesses with very small profit margins, yet most still
+                      support our sports teams, business associations and have
+                      provided us all with incredible memories with family and
+                      friends. It’s time to pay it forward and help them to
+                      survive.
                     </p>
                   </Col>
                 </Row>

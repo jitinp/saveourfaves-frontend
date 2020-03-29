@@ -28,6 +28,7 @@
     "build": "react-scripts build",
     "deploy": "aws s3 sync build/ s3://saveourfacesontario --acl public-read",
     "deploy-test": "aws s3 sync build/ s3://test.saveyourfaves.ca --acl public-read",
+    "deploy-prod": "aws s3 sync build/ s3://www.saveyourfaves.ca --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",

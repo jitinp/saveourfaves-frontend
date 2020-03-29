@@ -71,7 +71,7 @@ function FAQModal(props) {
         renderLink("https://SaveOurFaves.org", "SaveOurFaves.org") +
         " started by Kaitlyn & Mike Krieger. Gift cards are secured revenue for our favourite cafes, restaurants and places during this unpredictable time and every pruchase helps! We couldn’t have done this without the generous support from Kaitlyn & Mike Krieger, Jitin Pillai and his team at " +
         renderLink("https://easydeploy.io", "EasyDeploy") +
-        ", Barry Hillier and his team at Barry Hillier Consulting. You can contract us with any questions about the the site at " +
+        ", Barry Hillier and his team at Barry Hillier Consulting. You can contact us with any questions about the the site at " +
         renderLink("mailto:info@SaveYourFaves.ca", "info@SaveYourFaves.ca")
     }
   ];

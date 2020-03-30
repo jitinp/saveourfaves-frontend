@@ -150,11 +150,7 @@ class App extends React.Component {
                     save it.
                   </Title>
                   <div className="header-sans">
-                    It’s time to stand together Toronto and help our vibrant
-                    restaurant scene from closing down. By ordering take-out or
-                    buying gift cards today, we can keep your favourite
-                    restaurants and their staff employed to serve Toronto again
-                    tomorrow.
+                    By buying gift cards today, you can keep your favourite restaurant open tomorrow.
                   </div>
                 </Col>
                 <Col
@@ -205,7 +201,9 @@ class App extends React.Component {
                       Think of it as a small loan that gets the restaurant
                       through the next few weeks and an incredible meal for
                       yourself and others to enjoy together when this is all
-                      over.
+                      over. To learn what a coalition of independent Canadian 
+                      restaurateurs and suppliers are asking of all levels of 
+                      government: www.savehospitality.ca
                     </p>
                   </Col>
                   <Col

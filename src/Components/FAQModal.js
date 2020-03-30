@@ -45,7 +45,7 @@ function FAQModal(props) {
     {
       title: "What is saveyourfaves.ca?",
       body:
-        "SaveYourFaves is a directory of Toronto restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
+        "SaveYourFaves is a directory of Toronto restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town."
     },
     {
       title: "Why isn’t my favorite business on your site?",
